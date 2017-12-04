@@ -13,6 +13,7 @@ $repo = getenv('DEPLOY_REPOSITORY');
 $path = getenv('DEPLOY_PATH');
 $env_path = getenv('ENV_PATH');
 $laradock_dir = getenv('LARADOCK_DIR');
+$site_path = getenv('SITE_PATH');
 
 if ( substr($path, 0, 1) !== '/' ) throw new Exception('Careful - your deployment path does not begin with /');
 
@@ -25,27 +26,22 @@ $path = rtrim($path, '/');
 
 @task('deploy')
 cd {{ $path }}
-cd {{ $laradock_dir }}
-docker-compose exec workspace bash
-rm -rf *
-git clone {{ $repo }} --branch={{ $branch }} --depth=1 .
-exit
-echo "Repository cloned"
+git pull origin master
 
-cp {{ $env_path }} {{ $path . '/' }}
-echo "Environment file set up"
+cp -r * {{ $site_path }}
+cp {{ $env_path }} {{ $site_path }}
 composer update --no-interaction --quiet --no-dev
 echo "Composer update completed"
 
-php artisan migrate --force --no-interaction
-echo "Migrations ran"
+{{--php artisan migrate --force --no-interaction--}}
+{{--echo "Migrations ran"--}}
 
-php artisan view:clear --quiet
-php artisan cache:clear --quiet
-php artisan config:cache --quiet
-echo 'Caches cleared'
+{{--php artisan view:clear --quiet--}}
+{{--php artisan cache:clear --quiet--}}
+{{--php artisan config:cache --quiet--}}
+{{--echo 'Caches cleared'--}}
 
-php artisan optimize --quiet
+{{--php artisan optimize --quiet--}}
 
 echo "Deployment complete"
 @endtask

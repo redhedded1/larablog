@@ -83,5 +83,8 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        $('#flash-overlay-modal').modal();
+    </script>
 </body>
 </html>
