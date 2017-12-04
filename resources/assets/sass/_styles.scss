@@ -1,0 +1,243 @@
+body{
+    background-color: rgba(208, 160, 113, 0.0625);
+}
+ul{
+    list-style: none;
+}
+h4{
+    color:#3097d1;
+}
+.site-heading h1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 48px;
+}
+a:hover{
+    color:#5d000f;
+}
+.body{
+    font-size:18px;
+}
+p.small{
+    font-size:15px;
+}
+
+.btn{
+    padding: 6px 12px;
+}
+.btn-primary{
+    background-color: #cacaca;
+    border-color: #333;
+}
+.btn-primary:hover{
+    background-color: #632c18;
+    border-color:#222;
+}
+
+.navbar.navbar-default.navbar-static-top {
+    background-color: #e5dac6;
+    margin-bottom: 0;
+    height: 130px;
+}
+.intro-header .site-heading h1,
+.intro-header .site-heading .subheading,
+.navbar-custom,
+.navbar-default .navbar-brand{
+    text-shadow: 1px 1px 2px #000;
+    color: #f2f2f2;
+}
+.navbar-default .navbar-brand img {
+    width: 125px;
+    margin-top: -13px;
+}
+.navbar-custom .dropdown-menu{
+    background: rgba(208, 160, 113, 0.55);
+    text-shadow: none;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color:transparent;
+    text-shadow:none;
+}
+.navbar-custom {
+    background: rgba(208, 160, 113, 0.25);
+}
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+    background-color: rgba(202, 202, 202, .33)
+}
+.navbar-nav li a {
+    line-height: 105px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.navbar .dropdown-menu li a {
+    line-height: 1.4;
+}
+.navbar-right .dropdown-menu {
+    top: 97%;
+}
+
+#app-navbar-collapse > ul.nav.navbar-nav.navbar-right > li.dropdown.open > ul > li a{
+    color:#000000;
+}
+
+.tags li a{
+    background-color: #e4e4e4;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    padding: 0 5px;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    background-color: #5d000f;
+    border-color: #3d000f;
+    cursor: default;
+}
+.pagination>li>a, .pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    line-height: 1.6;
+    text-decoration: none;
+    color: #3d000f;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin-left: -1px;
+}
+.fa-circle:hover{
+    color:#3d000f;
+}
+#cbp-spmenu-s3{
+    display: none;
+}
+#mobileMenuToggle{
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+
+    .logo{
+        max-width: 10%;
+    }
+
+    #cbp-spmenu-s3 {
+        display: block;
+    }
+
+    #cbp-spmenu-s3:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+        margin-right: -0.25em; /* Adjusts for spacing */
+    }
+    #mobileMenuToggle {
+        display: inline-block;
+        position: absolute;
+        right: 0;
+        z-index: 9999;
+    }
+
+    #bigNav {
+        display: none;
+    }
+
+    /* General styles for all menus */
+    .cbp-spmenu {
+        background: rgba(208, 160, 113, 0.25);
+        position: relative;
+    }
+    
+    .cbp-spmenu a {
+        color: #fff;
+        font-size: 1.1em;
+        font-weight: 300;
+    }
+
+    .cbp-spmenu a:hover {
+        background: #f2f2f2;
+    }
+
+    .cbp-spmenu a:active {
+        background: #3d0005;
+        color: #f2f2f2;
+    }
+
+    .cbp-spmenu-horizontal {
+        width: 100%;
+        height: 150px;
+        left: 0;
+        z-index: 1000;
+        overflow: hidden;
+        text-align: center;
+    }
+
+    .cbp-spmenu-horizontal a {
+        width: 15%;
+        padding:0.5em;
+        color:#5D000f;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    /* Horizontal menu that slides from the top or bottom */
+    .cbp-spmenu-top {
+        top: -183px;
+        height: 0;
+    }
+
+    .cbp-spmenu-top.cbp-spmenu-open {
+        top: 0px;
+        height: 150px;
+    }
+
+    /* Push classes applied to the body */
+    .cbp-spmenu-push {
+        overflow-x: hidden;
+        position: relative;
+        left: 0;
+    }
+
+    /* Transitions */
+    .cbp-spmenu,
+    .cbp-spmenu-push {
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+}
+@media only screen and (max-width: 560px) {
+    .cbp-spmenu a {
+        font-size: 0.75em;
+        font-weight: 300;
+    }
+}
+@media only screen and (max-width: 320px) {
+
+
+}
+
+
+    /*@media screen and (max-height: 26.375em){*/
+
+        /*.cbp-spmenu-vertical {*/
+            /*font-size: 90%;*/
+            /*width: 190px;*/
+        /*}*/
+
+        /*.cbp-spmenu-left,*/
+        /*.cbp-spmenu-push-toleft {*/
+            /*left: -190px;*/
+        /*}*/
+
+        /*.cbp-spmenu-right {*/
+            /*right: -190px;*/
+        /*}*/
+
+        /*.cbp-spmenu-push-toright {*/
+            /*left: 190px;*/
+        /*}*/
+    /*}*/
+/*}*/

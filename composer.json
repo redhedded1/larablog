@@ -6,9 +6,12 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
+        "bestmomo/laravel-email-confirmation": "^1.1",
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
-        "laravel/tinker": "~1.0"
+        "laravel/tinker": "~1.0",
+        "laravelcollective/html": "^5.4.0",
+        "spatie/laravel-permission": "^2.7"
     },
     "require-dev": {
         "filp/whoops": "~2.0",

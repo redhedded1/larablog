@@ -1,0 +1,116 @@
+<mjml>
+    <mj-head>
+        <!-- Head components go here: https://mjml.io/documentation/#standard-head-components -->
+        <mj-title>From the Desk of Larry A. Ball</mj-title>
+        <mj-attributes>
+            <mj-all padding="0" font-family="Helvetica, sans-serif" background-color="transparent" />
+            <mj-class name="image" align="center" padding="0" width="200" background-color="transparent" />
+            <mj-class name="hdr" font-size="30" font-weight="bold" align="left" color="#F5F5F5" background-color="transparent" />
+            <mj-class name="sub-hdr" font-size="24px" font-weight="bold" align="left" color="#380501" padding="0 0 16 0"/>
+            <mj-class name="sig-bg" background-color="#F5F5F5" padding="0 50 0 0"/>
+            <mj-class name="sig" font-size="19px" line-height="20px" align="right" border-color="#222222" padding="0 50px 0 0"/>
+            <mj-class name="section-padding" padding="40 0 20 0"/>
+        </mj-attributes>
+        <mj-style>
+            a {
+                text-decoration: none;
+                border-bottom: 1px solid #000;
+                color: #380501; 
+                font-size: 17px
+                text-decoration: none
+                font-weight: bold;
+            }
+            span{
+                font-weight: normal;
+                text-transform: uppercase;
+            }
+        </mj-style>
+    </mj-head>
+    <mj-body>
+        <!-- mj-container defines the default styling of our email, including the default width, set to 600 but overwritable -->
+        <mj-container>
+            <!-- Body components go here (https://mjml.io/documentation/#standard-body-components) -->
+            <mj-hero 
+                mode="fluid-height"
+                background-width="600px"
+                background-height="469px"
+                background-url="https://larryaball.net/fretboard-cropped.JPG"
+                background-color="#222222"
+                padding="100px 0px">
+                <mj-hero-content width="100%">
+                    <mj-image 
+                        mj-class="image" 
+                        src="https://larryaball.net/logo.png" 
+                        href="https://larryaball.net" 
+                        alt="Logo"/>
+                        <mj-text
+                            padding="20px"
+                            color="#ffffff"
+                            font-family="Helvetica"
+                            align="center"
+                            font-size="45"
+                            line-height="45px"
+                            font-weight="900">
+                            LARRY A. BALL
+                        </mj-text>  
+                    </mj-hero-content>
+                </mj-hero>
+            <mj-section 
+                mj-class="section-padding"
+                background-color="#F5F5F5">
+                <mj-column>
+                    <mj-text padding="0 0 15px 45px" mj-class="sub-hdr">Header</mj-text>
+                    <mj-text padding="0 0 0 65px" align="left" font-size="18">Body Text</mj-text>
+                </mj-column>
+            </mj-section>
+            <mj-section 
+                mj-class="section-padding"
+                background-color="#F5F5F5">
+                <mj-column>
+                    <mj-divider 
+                        padding="0 62% 0 0" 
+                        align="left" 
+                        width="15px"
+                        border-color="#444444" 
+                        border-width="2px"
+                        border-style="dashed"
+                        />
+                </mj-column>
+                <mj-column></mj-column>
+            </mj-section>
+            <mj-section mj-class="sig-bg">
+                <mj-column>
+                    <mj-text
+                    font-size="19px" 
+                    align="left" 
+                    padding="0 0 5 45px" 
+                    color="#222222"
+                    font-weight="bold">
+                        Larry A. Ball
+                    </mj-text>
+                    <mj-text
+                        font-size="19px" 
+                        align="left" 
+                        padding="5px 0 5px 45px" 
+                        color="#380501">
+                        <span>Website:</span> <a href="https://larryaball.net">larryaball.net</a>
+                    </mj-text>
+                    <mj-text
+                        font-size="19px" 
+                        align="left" 
+                        padding="5px 0 5px 45px" 
+                        color="#380501">
+                        <span>Weblog:</span> <a href="https://larryaball.info">larryaball.info</a>
+                    </mj-text>
+                    <mj-text
+                        font-size="19px" 
+                        align="left" 
+                        padding="5px 0 50px 45px" 
+                        color="#380501">
+                        <span>Twitter:</span> <a href="https://twitter.com/LarryABall">@LarryABall</a>
+                    </mj-text>
+                </mj-column>
+            </mj-section>
+        </mj-container>
+    </mj-body>
+</mjml>
