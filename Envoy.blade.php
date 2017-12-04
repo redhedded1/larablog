@@ -25,9 +25,10 @@ $path = rtrim($path, '/');
 @servers(['web' => $server])
 
 @task('deploy')
-cd {{ $path }}
-git pull origin master
-
+cd /home/lball/src
+rm -rf larablog
+git clone {{ $repo }}
+cd larablog
 cp -r * {{ $site_path }}
 cp {{ $env_path }} {{ $site_path }}
 composer update --no-interaction --quiet --no-dev
